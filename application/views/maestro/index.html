@@ -1,0 +1,21 @@
+$def with(maestro)
+<h3>
+    <a href="/maestro">maestro</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>maestro</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in maestro:
+        <tr>
+            <td><a href='/maestro/view/$item.Idmaestro'>$item.Nombre $item.Ap_paterno $item.Ap_materno </a></td>
+            <td><a href='/maestro/edit/$item.Idmaestro'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/maestro/delete/$item.Idmaestro'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

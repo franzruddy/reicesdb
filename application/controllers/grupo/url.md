@@ -1,0 +1,5 @@
+'/grupo', 'application.controllers.grupo.index.Index',
+'/grupo/view/(.+)', 'application.controllers.grupo.view.View',
+'/grupo/edit/(.+)', 'application.controllers.grupo.edit.Edit',
+'/grupo/delete/(.+)', 'application.controllers.grupo.delete.Delete',
+'/grupo/insert', 'application.controllers.grupo.insert.Insert',

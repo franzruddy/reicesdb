@@ -1,0 +1,1 @@
+'/api_maestro/?', 'application.api.maestro.api_maestro.Api_maestro',

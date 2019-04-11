@@ -1,0 +1,5 @@
+'/registro_juego', 'application.controllers.registro_juego.index.Index',
+'/registro_juego/view/(.+)', 'application.controllers.registro_juego.view.View',
+'/registro_juego/edit/(.+)', 'application.controllers.registro_juego.edit.Edit',
+'/registro_juego/delete/(.+)', 'application.controllers.registro_juego.delete.Delete',
+'/registro_juego/insert', 'application.controllers.registro_juego.insert.Insert',

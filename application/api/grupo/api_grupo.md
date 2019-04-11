@@ -1,0 +1,1 @@
+'/api_grupo/?', 'application.api.grupo.api_grupo.Api_grupo',

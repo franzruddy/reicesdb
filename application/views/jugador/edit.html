@@ -1,0 +1,37 @@
+$def with(jugador, message)
+<h3>
+    <a href="/jugador">jugador</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="Idjugador" id="Idjugador" value="$jugador.Idjugador" />
+
+    <div class="form-group">
+    <label for="Nombre">Nombre</label>
+    <input required id="Nombre" type="text" class="form-control" name="Nombre" size="30" value="$jugador.Nombre"/>
+</div><div class="form-group">
+    <label for="Ap_paterno">Ap_paterno</label>
+    <input required id="Ap_paterno" type="text" class="form-control" name="Ap_paterno" size="30" value="$jugador.Ap_paterno"/>
+</div><div class="form-group">
+    <label for="Ap_materno">Ap_materno</label>
+    <input required id="Ap_materno" type="text" class="form-control" name="Ap_materno" size="30" value="$jugador.Ap_materno"/>
+</div><div class="form-group">
+    <label for="Usuario">Usuario</label>
+    <input required id="Usuario" type="text" class="form-control" name="Usuario" size="30" value="$jugador.Usuario"/>
+</div><div class="form-group">
+    <label for="idmaestro_ju">idmaestro_ju</label>
+    <input required id="idmaestro_ju" type="text" class="form-control" name="idmaestro_ju" size="30" value="$jugador.idmaestro_ju"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,5 @@
+'/maestro', 'application.controllers.maestro.index.Index',
+'/maestro/view/(.+)', 'application.controllers.maestro.view.View',
+'/maestro/edit/(.+)', 'application.controllers.maestro.edit.Edit',
+'/maestro/delete/(.+)', 'application.controllers.maestro.delete.Delete',
+'/maestro/insert', 'application.controllers.maestro.insert.Insert',

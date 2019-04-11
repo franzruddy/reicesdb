@@ -1,0 +1,1 @@
+'/api_jugador/?', 'application.api.jugador.api_jugador.Api_jugador',

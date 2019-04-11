@@ -1,0 +1,35 @@
+$def with(registro_juego, message)
+<h3>
+    <a href="/registro_juego">registro_juego</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="Idregistrojuego" id="Idregistrojuego" value="$registro_juego.Idregistrojuego" />
+
+    <div class="form-group">
+    <label for="fecha_registro">fecha_registro</label>
+    <input readonly id="fecha_registro" type="text" class="form-control" name="fecha_registro" size="30" value="$registro_juego.fecha_registro"/>
+</div><div class="form-group">
+    <label for="jugador_idjugador">jugador_idjugador</label>
+    <input readonly id="jugador_idjugador" type="text" class="form-control" name="jugador_idjugador" size="30" value="$registro_juego.jugador_idjugador"/>
+</div><div class="form-group">
+    <label for="juego_idjuego">juego_idjuego</label>
+    <input readonly id="juego_idjuego" type="text" class="form-control" name="juego_idjuego" size="30" value="$registro_juego.juego_idjuego"/>
+</div><div class="form-group">
+    <label for="logros_idlogros">logros_idlogros</label>
+    <input readonly id="logros_idlogros" type="text" class="form-control" name="logros_idlogros" size="30" value="$registro_juego.logros_idlogros"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

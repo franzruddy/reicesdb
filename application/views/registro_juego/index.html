@@ -1,0 +1,21 @@
+$def with(registro_juego)
+<h3>
+    <a href="/registro_juego">registro_juego</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>registro_juego</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in registro_juego:
+        <tr>
+            <td><a href='/registro_juego/view/$item.Idregistrojuego'>$item.fecha_registro</a></td>
+            <td><a href='/registro_juego/edit/$item.Idregistrojuego'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/registro_juego/delete/$item.Idregistrojuego'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

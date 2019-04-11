@@ -1,0 +1,5 @@
+'/institucion', 'application.controllers.institucion.index.Index',
+'/institucion/view/(.+)', 'application.controllers.institucion.view.View',
+'/institucion/edit/(.+)', 'application.controllers.institucion.edit.Edit',
+'/institucion/delete/(.+)', 'application.controllers.institucion.delete.Delete',
+'/institucion/insert', 'application.controllers.institucion.insert.Insert',

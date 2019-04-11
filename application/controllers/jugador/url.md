@@ -1,0 +1,5 @@
+'/jugador', 'application.controllers.jugador.index.Index',
+'/jugador/view/(.+)', 'application.controllers.jugador.view.View',
+'/jugador/edit/(.+)', 'application.controllers.jugador.edit.Edit',
+'/jugador/delete/(.+)', 'application.controllers.jugador.delete.Delete',
+'/jugador/insert', 'application.controllers.jugador.insert.Insert',

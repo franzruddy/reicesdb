@@ -1,0 +1,1 @@
+'/api_registro_juego/?', 'application.api.registro_juego.api_registro_juego.Api_registro_juego',

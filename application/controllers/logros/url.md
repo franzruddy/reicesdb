@@ -1,0 +1,5 @@
+'/logros', 'application.controllers.logros.index.Index',
+'/logros/view/(.+)', 'application.controllers.logros.view.View',
+'/logros/edit/(.+)', 'application.controllers.logros.edit.Edit',
+'/logros/delete/(.+)', 'application.controllers.logros.delete.Delete',
+'/logros/insert', 'application.controllers.logros.insert.Insert',

@@ -1,0 +1,29 @@
+$def with(institucion, message)
+<h3>
+    <a href="/institucion">institucion</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="codinstitucion" id="codinstitucion" value="$institucion.codinstitucion" />
+
+    <div class="form-group">
+    <label for="nombreinstitucion">nombreinstitucion</label>
+    <input readonly id="nombreinstitucion" type="text" class="form-control" name="nombreinstitucion" size="30" value="$institucion.nombreinstitucion"/>
+</div><div class="form-group">
+    <label for="usuario_web">usuario_web</label>
+    <input readonly id="usuario_web" type="text" class="form-control" name="usuario_web" size="30" value="$institucion.usuario_web"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>
